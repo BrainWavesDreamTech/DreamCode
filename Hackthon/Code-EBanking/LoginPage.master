@@ -1,0 +1,74 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginPage.master.cs" Inherits="HomePage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Dream bank</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header" style="z-index: 100">
+		<div id="headercontent">
+			<h1>
+                Dream Bank</h1>
+			<h2>
+                INDIA'S BEST BANK</h2>
+		</div>
+	</div>
+
+
+	<form method="post" action="">
+		<div id="search" style="z-index: 101">
+            &nbsp;
+		</div>
+	</form>
+
+
+	<div id="headerpic" style="z-index: 102"></div>
+
+	
+	<div id="menu" style="z-index: 103">
+		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+	</div>
+	<div id="menubottom" style="width: 777px; height: 1px">
+        <br />
+        &nbsp;&nbsp;<a href="http://www.citizensbank.com/promotions/cd/buildsavings.aspx"></a>&nbsp;
+        &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        &nbsp; &nbsp;&nbsp;
+        <br />
+        <script language="javascript" src="filecabinet.js">function Reset1_onclick() {
+
+}
+
+function TABLE1_onclick() {
+
+}
+
+</script>
+
+        <br />
+    </div>
+
+
+
+
+	<div id="footer" style="z-index: 105">
+			<div class="left">&copy; 2014 . All rights reserved.</div>
+			<div class="right">Design by Dream Tech</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

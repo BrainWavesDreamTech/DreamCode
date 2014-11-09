@@ -1,0 +1,200 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Dream Bank</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="default.css" />
+</head>
+
+<script language="javascript">
+	function alpha()
+		{
+		var k;		
+		k=window.event.keyCode;			
+		if( (k>64 && k<91)||(k>96 && k<122) || (k==32)|| (k==46) )
+		{
+		}
+		else
+		{
+          	window.event.returnValue=false;
+          	alert("You Should enter alphabets Only");
+		
+		}
+		}	
+		
+		</script>
+		<script language="javascript">
+       
+		function validn()
+		{
+	
+		var e;
+		
+		e=window.event.keyCode;
+		
+	
+		if ((e>47&& e<58)||(e==44)|| (e==45)) 
+		{
+		}
+		else
+		{
+         window.event.returnValue=false;
+		
+		}
+		}
+	
+		</script>
+		
+		<script language="javascript">
+		function pincode()
+		{
+	
+		var e;
+		
+		e=window.event.keyCode;
+	 
+		
+		if ((e>47&& e<58)||(e==32)) 
+		{
+		}
+		else
+		{
+         window.event.returnValue=false;
+		
+		}
+		}
+			</script>
+		
+		<script language="javascript">
+		
+	  function mail()
+		{
+	
+		var e;
+		e=window.event.keyCode;
+		
+		
+		if( (e>64 && e<91)||(e>96&&e<122)|| (e>47&& e<58) ||(e==95) || (e==64) || (e==46))
+		{
+		}
+		else
+		{
+          	window.event.returnValue=false;
+		
+		}
+		}
+		
+
+		</script>
+<body background="Images/bg2.jpg">
+
+<div id="upbg"></div>
+
+<div id="outer" style="left: 1px; top: 0px; height: 697px">
+
+
+	<div id="header" style="z-index: 100">
+		<div id="headercontent">
+			<h1>
+               Dream Bank</h1>
+			<h2>
+                INDIA"S BEST BANK</h2>
+		</div>
+	</div>
+
+
+	
+		<div id="search" style="z-index: 101">
+            &nbsp;
+		</div>
+	
+
+
+	<div id="headerpic" style="z-index: 102"></div>
+
+	
+	<div id="menu" style="z-index: 103">
+		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+	</div>
+	<div id="menubottom" style="width: 188px; height: 38px; border-right: lime thin solid;">
+        <div id="Div1" style="z-index: 107; left: 0px; position: relative; top: 0px">
+            <br />
+            <br />
+            <asp:Panel ID="Panel1" runat="server" Height="172px" Width="125px" style="left: 4px; position: relative; top: 43px">
+                <table style="z-index: 100; left: 5px; width: 177px; position: relative; top: 21px;
+                    height: 156px">
+                    <tr>
+                        <td colspan="3">
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            <asp:HyperLink ID="HyperLink1" runat="server" Style="z-index: 100; left: 0px; position: relative;
+                                top: 0px" NavigateUrl="~/CreateAccount.aspx">Account Numbers</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="height: 18px">
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                            <asp:HyperLink ID="HyperLink3" runat="server" Style="z-index: 100; left: -7px; position: relative;
+                                top: 0px" NavigateUrl="~/ChequeBookPages.aspx">ChequeBooks</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:HyperLink ID="HyperLink4" runat="server" Style="z-index: 100; left: 26px; position: relative;
+                                top: 0px" NavigateUrl="~/UsersPages.aspx">Users</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/secur.aspx" Style="z-index: 100;
+                                left: -20px; position: relative; top: 0px">Security</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/LoginPage.aspx" Style="z-index: 100;
+                                left: 26px; position: relative; top: 2px">LogOut</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="height: 35px">
+                            </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            <br />
+            <br />
+            <br />
+            <br />
+            &nbsp;</div>
+    </div>
+    <div id="Div3" style="z-index: 106; left: 193px; width: 585px; position: absolute; top: 285px; height: 274px;">
+        <div id="Div2" style="z-index: 107; left: 0px; position: relative; top: 0px">
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </asp:ContentPlaceHolder>
+            &nbsp;&nbsp;<br />
+            &nbsp;</div>
+    </div>
+
+
+
+
+	<div id="footer" style="left: 0px; top: 18px">
+			<div class="left">&copy; 2014. All rights reserved.</div>
+			<div class="right">Design by Dream tech</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

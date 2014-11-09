@@ -1,0 +1,95 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="HomePage" %>
+<%@ Register Src="MenusUserCtrl.ascx" TagName="MenusUserCtrl" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Dream tech team
+</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header" style="z-index: 100">
+		<div id="headercontent">
+			<h1>
+                Dream Bank</h1>
+			<h2>
+                INDIA'S BEST BANK</h2>
+		</div>
+	</div>
+
+
+	<form method="post" action="">
+		<div id="search" style="z-index: 101">
+            &nbsp;
+		</div>
+	</form>
+
+
+	<div id="headerpic" style="z-index: 102"></div>
+
+
+	<div id="menu" style="z-index: 103">
+		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+	</div>
+	<br />
+	<br />
+	<asp:Panel ID="Panel1" runat="server" Height="50px" Style="z-index: 107;
+            left: 0px; position: relative; top: 0px" Width="125px">
+           	<uc1:MenusUserCtrl ID="MenusUserCtrl1" runat="server" />
+        </asp:Panel>
+    <div id="footer" style="z-index: 105; left: 287px; width: 315px; position: relative; top: 176px;">
+        
+        &nbsp;&nbsp;
+    </div>
+    <div id="Div1" style="z-index: 106; left: 319px; width: 325px; position: absolute; top: 299px; height: 72px;">
+        &nbsp;&nbsp;<asp:Panel ID="Panel2" runat="server" Height="50px" Style="z-index: 100;
+            left: 1px; position: relative; top: -10px" Width="125px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </div>
+
+
+
+
+	<div id="footer" style="z-index: 104; left: 0px; top: 97px;">
+			<div class="left">&copy; 2014 Dream tech All rights reserved.</div>
+			<div class="right">Design by Dream Tech</div>
+	</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+	
+</div>
+
+</body>
+</html>

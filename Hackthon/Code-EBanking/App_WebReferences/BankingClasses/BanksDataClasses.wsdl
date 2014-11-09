@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="accountdata">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fathers_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dateofbirth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="age" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="maritalstatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pincode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emailid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debitcardno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="branchcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typecode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="accountno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="accountType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debitissuedate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debitexpdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debitpinno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debitstatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="chequebook" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="toaccno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fromaccno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="credit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="debit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="balance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Transid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="oldchequebookid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="accountinfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Updateaccountinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateaccountinfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAccData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetdateAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sdate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetdateAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetdateAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDebitcards">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDebitcardsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDebitcardsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getbranchcards">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetbranchcardsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetbranchcardsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getchequebooks">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetchequebooksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetchequebooksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDebitDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDebitDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ViewUserDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="ViewUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewUserDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewchequeRequestsDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="ViewchequeRequestsDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewchequeRequestsDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Viewoldcheques">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewoldchequesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewoldchequesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatechequedetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newchequeid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldchequeid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatechequedetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalanceDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalanceDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBalanceDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBalanceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="settransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="settransactionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setselftransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setselftransactionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetBranchDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetbraccountDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="branchcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetbraccountDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetbraccountDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Viewoldacccheques">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewoldaccchequesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewoldaccchequesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertchequeRequests">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AD" type="tns:accountdata" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertchequeRequestsResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:accountinfo" />
+  </wsdl:message>
+  <wsdl:message name="accountinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:accountinfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateaccountinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:Updateaccountinfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateaccountinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateaccountinfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccData" />
+  </wsdl:message>
+  <wsdl:message name="GetAccDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetdateAddSoapIn">
+    <wsdl:part name="parameters" element="tns:GetdateAdd" />
+  </wsdl:message>
+  <wsdl:message name="GetdateAddSoapOut">
+    <wsdl:part name="parameters" element="tns:GetdateAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDebitcardsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDebitcards" />
+  </wsdl:message>
+  <wsdl:message name="GetDebitcardsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDebitcardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetbranchcardsSoapIn">
+    <wsdl:part name="parameters" element="tns:Getbranchcards" />
+  </wsdl:message>
+  <wsdl:message name="GetbranchcardsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetbranchcardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetchequebooksSoapIn">
+    <wsdl:part name="parameters" element="tns:Getchequebooks" />
+  </wsdl:message>
+  <wsdl:message name="GetchequebooksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetchequebooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDebitDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDebitDetails" />
+  </wsdl:message>
+  <wsdl:message name="InsertDebitDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDebitDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="AddUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ViewUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="ViewUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewchequeRequestsDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ViewchequeRequestsDetails" />
+  </wsdl:message>
+  <wsdl:message name="ViewchequeRequestsDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewchequeRequestsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewoldchequesSoapIn">
+    <wsdl:part name="parameters" element="tns:Viewoldcheques" />
+  </wsdl:message>
+  <wsdl:message name="ViewoldchequesSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewoldchequesResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatechequedetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:updatechequedetails" />
+  </wsdl:message>
+  <wsdl:message name="updatechequedetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:updatechequedetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBalanceDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBalanceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="settransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:settransaction" />
+  </wsdl:message>
+  <wsdl:message name="settransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:settransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="setselftransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:setselftransaction" />
+  </wsdl:message>
+  <wsdl:message name="setselftransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:setselftransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetbraccountDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetbraccountDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetbraccountDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetbraccountDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewoldaccchequesSoapIn">
+    <wsdl:part name="parameters" element="tns:Viewoldacccheques" />
+  </wsdl:message>
+  <wsdl:message name="ViewoldaccchequesSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewoldaccchequesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertchequeRequestsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertchequeRequests" />
+  </wsdl:message>
+  <wsdl:message name="InsertchequeRequestsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertchequeRequestsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BanksDataClassesSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountinfo">
+      <wsdl:input message="tns:accountinfoSoapIn" />
+      <wsdl:output message="tns:accountinfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Updateaccountinfo">
+      <wsdl:input message="tns:UpdateaccountinfoSoapIn" />
+      <wsdl:output message="tns:UpdateaccountinfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccData">
+      <wsdl:input message="tns:GetAccDataSoapIn" />
+      <wsdl:output message="tns:GetAccDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetdateAdd">
+      <wsdl:input message="tns:GetdateAddSoapIn" />
+      <wsdl:output message="tns:GetdateAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitcards">
+      <wsdl:input message="tns:GetDebitcardsSoapIn" />
+      <wsdl:output message="tns:GetDebitcardsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getbranchcards">
+      <wsdl:input message="tns:GetbranchcardsSoapIn" />
+      <wsdl:output message="tns:GetbranchcardsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getchequebooks">
+      <wsdl:input message="tns:GetchequebooksSoapIn" />
+      <wsdl:output message="tns:GetchequebooksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDebitDetails">
+      <wsdl:input message="tns:InsertDebitDetailsSoapIn" />
+      <wsdl:output message="tns:InsertDebitDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserDetails">
+      <wsdl:input message="tns:AddUserDetailsSoapIn" />
+      <wsdl:output message="tns:AddUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewUserDetails">
+      <wsdl:input message="tns:ViewUserDetailsSoapIn" />
+      <wsdl:output message="tns:ViewUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewchequeRequestsDetails">
+      <wsdl:input message="tns:ViewchequeRequestsDetailsSoapIn" />
+      <wsdl:output message="tns:ViewchequeRequestsDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldcheques">
+      <wsdl:input message="tns:ViewoldchequesSoapIn" />
+      <wsdl:output message="tns:ViewoldchequesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updatechequedetails">
+      <wsdl:input message="tns:updatechequedetailsSoapIn" />
+      <wsdl:output message="tns:updatechequedetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetails">
+      <wsdl:input message="tns:CheckUserDetailsSoapIn" />
+      <wsdl:output message="tns:CheckUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalanceDetails">
+      <wsdl:input message="tns:GetBalanceDetailsSoapIn" />
+      <wsdl:output message="tns:GetBalanceDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDetails">
+      <wsdl:input message="tns:GetTransactionDetailsSoapIn" />
+      <wsdl:output message="tns:GetTransactionDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountDetails">
+      <wsdl:input message="tns:GetAccountDetailsSoapIn" />
+      <wsdl:output message="tns:GetAccountDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <wsdl:input message="tns:GetBalanceSoapIn" />
+      <wsdl:output message="tns:GetBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="settransaction">
+      <wsdl:input message="tns:settransactionSoapIn" />
+      <wsdl:output message="tns:settransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setselftransaction">
+      <wsdl:input message="tns:setselftransactionSoapIn" />
+      <wsdl:output message="tns:setselftransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetails">
+      <wsdl:input message="tns:GetBranchDetailsSoapIn" />
+      <wsdl:output message="tns:GetBranchDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetbraccountDetails">
+      <wsdl:input message="tns:GetbraccountDetailsSoapIn" />
+      <wsdl:output message="tns:GetbraccountDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldacccheques">
+      <wsdl:input message="tns:ViewoldaccchequesSoapIn" />
+      <wsdl:output message="tns:ViewoldaccchequesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertchequeRequests">
+      <wsdl:input message="tns:InsertchequeRequestsSoapIn" />
+      <wsdl:output message="tns:InsertchequeRequestsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BanksDataClassesSoap" type="tns:BanksDataClassesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountinfo">
+      <soap:operation soapAction="http://tempuri.org/accountinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updateaccountinfo">
+      <soap:operation soapAction="http://tempuri.org/Updateaccountinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccData">
+      <soap:operation soapAction="http://tempuri.org/GetAccData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetdateAdd">
+      <soap:operation soapAction="http://tempuri.org/GetdateAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitcards">
+      <soap:operation soapAction="http://tempuri.org/GetDebitcards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getbranchcards">
+      <soap:operation soapAction="http://tempuri.org/Getbranchcards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getchequebooks">
+      <soap:operation soapAction="http://tempuri.org/Getchequebooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDebitDetails">
+      <soap:operation soapAction="http://tempuri.org/InsertDebitDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserDetails">
+      <soap:operation soapAction="http://tempuri.org/AddUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewUserDetails">
+      <soap:operation soapAction="http://tempuri.org/ViewUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewchequeRequestsDetails">
+      <soap:operation soapAction="http://tempuri.org/ViewchequeRequestsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldcheques">
+      <soap:operation soapAction="http://tempuri.org/Viewoldcheques" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatechequedetails">
+      <soap:operation soapAction="http://tempuri.org/updatechequedetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetails">
+      <soap:operation soapAction="http://tempuri.org/CheckUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalanceDetails">
+      <soap:operation soapAction="http://tempuri.org/GetBalanceDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDetails">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountDetails">
+      <soap:operation soapAction="http://tempuri.org/GetAccountDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <soap:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="settransaction">
+      <soap:operation soapAction="http://tempuri.org/settransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setselftransaction">
+      <soap:operation soapAction="http://tempuri.org/setselftransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetails">
+      <soap:operation soapAction="http://tempuri.org/GetBranchDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetbraccountDetails">
+      <soap:operation soapAction="http://tempuri.org/GetbraccountDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldacccheques">
+      <soap:operation soapAction="http://tempuri.org/Viewoldacccheques" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertchequeRequests">
+      <soap:operation soapAction="http://tempuri.org/InsertchequeRequests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BanksDataClassesSoap12" type="tns:BanksDataClassesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountinfo">
+      <soap12:operation soapAction="http://tempuri.org/accountinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updateaccountinfo">
+      <soap12:operation soapAction="http://tempuri.org/Updateaccountinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccData">
+      <soap12:operation soapAction="http://tempuri.org/GetAccData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetdateAdd">
+      <soap12:operation soapAction="http://tempuri.org/GetdateAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitcards">
+      <soap12:operation soapAction="http://tempuri.org/GetDebitcards" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getbranchcards">
+      <soap12:operation soapAction="http://tempuri.org/Getbranchcards" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getchequebooks">
+      <soap12:operation soapAction="http://tempuri.org/Getchequebooks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDebitDetails">
+      <soap12:operation soapAction="http://tempuri.org/InsertDebitDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/AddUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/ViewUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewchequeRequestsDetails">
+      <soap12:operation soapAction="http://tempuri.org/ViewchequeRequestsDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldcheques">
+      <soap12:operation soapAction="http://tempuri.org/Viewoldcheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatechequedetails">
+      <soap12:operation soapAction="http://tempuri.org/updatechequedetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalanceDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetBalanceDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetAccountDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="settransaction">
+      <soap12:operation soapAction="http://tempuri.org/settransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setselftransaction">
+      <soap12:operation soapAction="http://tempuri.org/setselftransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetbraccountDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetbraccountDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Viewoldacccheques">
+      <soap12:operation soapAction="http://tempuri.org/Viewoldacccheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertchequeRequests">
+      <soap12:operation soapAction="http://tempuri.org/InsertchequeRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BanksDataClasses">
+    <wsdl:port name="BanksDataClassesSoap" binding="tns:BanksDataClassesSoap">
+      <soap:address location="http://localhost:1460/BanksDataclasses/BanksDataClasses.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BanksDataClassesSoap12" binding="tns:BanksDataClassesSoap12">
+      <soap12:address location="http://localhost:1460/BanksDataclasses/BanksDataClasses.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
